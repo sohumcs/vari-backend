@@ -5,7 +5,7 @@ import numpy as np
 import tensorflow as tf
 
 app = Flask(__name__)
-model = tf.keras.models.load_model("trained_model.h5")  # Pre-trained model
+model = tf.keras.models.load_model("C:/Users/Sohum Srivastava/Desktop/vari-backend/backend/trained_model.h5")  # Pre-trained model
 
 @app.route('/upload', methods=['POST'])
 def upload_image():
