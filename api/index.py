@@ -31,5 +31,6 @@ def upload_image():
 
     return jsonify({"output_path": output_path, "classes": class_labels}), 200
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# Vercel expects a specific callable format to trigger the function
+def handler(request):
+    return app(request)
