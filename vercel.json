@@ -11,5 +11,11 @@
       "src": "/api/upload",
       "dest": "/backend/api/index.py"
     }
-  ]
-}
+  ],
+    "build": {
+      "env": {
+        "PYTHON_VERSION": "3.10.11"
+      }
+    }
+  }
+  
